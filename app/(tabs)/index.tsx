@@ -2,6 +2,7 @@ import ChatListScreen from "@/components/ChatListScreen";
 import ChatScreen from "@/components/ChatScreen";
 import CircularImgView from "@/components/CircularImgView";
 import LoginScreen from "@/components/LoginScreen";
+import { Link } from "expo-router";
 import React, { useState } from "react";
 import { View, StyleSheet, Text, TextInput } from "react-native";
 interface Chats {
@@ -33,9 +34,13 @@ const chats: Chats[] = [
   },
   { id: 6, name: "Mahsa", profilePic: "" },
 ];
+
 const App = () => {
   return (
-      <ChatListScreen chats={chats} />
+      <View>
+         <ChatListScreen chats={chats} />
+      <Link href="./Test">About</Link>
+    </View>
   );
 };
 
