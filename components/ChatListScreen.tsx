@@ -3,7 +3,7 @@ import { View,FlatList,Text,TouchableOpacity,StyleSheet,} from "react-native";
 import CircularImgView from "./CircularImgView";
 import { Link } from "expo-router";
 
-const ChatListScreen = ({chats }: any) => {
+const ChatListScreen = ({ chats }: any) => {
   const handlePressChat = (chat: any) => {
 
    // navigation.navigate("Chat", { chatId: chat.id, chatName: chat.name });
@@ -21,10 +21,14 @@ const ChatListScreen = ({chats }: any) => {
           </TouchableOpacity>
         )}
       />
-       <Link
-        href={'/..componentsChatScreen'}>
-          View user
-        </Link>
+
+      {/* <Link href="/Profile" style={{ color: "blue", fontSize: 18 }}>
+        Go to Profile
+      </Link> */}
+
+      <Link href="/" style={{ color: "blue", fontSize: 18 }}>
+        Go Back to Chat
+      </Link>
     </View>
   );
 };
