@@ -4,9 +4,11 @@ import CircularImgView from "./CircularImgView";
 import { Link } from "expo-router";
 
 const ChatListScreen = ({ chats }: any) => {
-  const handlePressChat = (chat: any) => {
 
-   // navigation.navigate("Chat", { chatId: chat.id, chatName: chat.name });
+  const handlePressChat = (chat: any) => {
+    console.log(chat);
+    
+   // navigation.navigate('Details')
   };
 
   return (
@@ -22,9 +24,9 @@ const ChatListScreen = ({ chats }: any) => {
         )}
       />
 
-      {/* <Link href="/Profile" style={{ color: "blue", fontSize: 18 }}>
+      <Link href="/profile" style={{ color: "blue", fontSize: 18 }}>
         Go to Profile
-      </Link> */}
+      </Link>
 
       <Link href="/" style={{ color: "blue", fontSize: 18 }}>
         Go Back to Chat

@@ -2,6 +2,7 @@ import ChatListScreen from "@/components/ChatListScreen";
 import ChatScreen from "@/components/ChatScreen";
 import CircularImgView from "@/components/CircularImgView";
 import LoginScreen from "@/components/LoginScreen";
+import { NavigationContainer } from "@react-navigation/native";
 import { Link } from "expo-router";
 import React, { useState } from "react";
 import { View, StyleSheet, Text, TextInput } from "react-native";
